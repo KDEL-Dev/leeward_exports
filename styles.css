@@ -9,6 +9,13 @@
     font-family: "lato";
 }
 
+a, a:visited, a:hover, a:active
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
 h1,h2,h3,h4,h5,h6
 {
     font-family: "funnel display";
@@ -20,7 +27,8 @@ header
     padding: 0 20px;
 
     color: white;
-    background-color: rgb(13, 13, 65);
+    background-image: linear-gradient(to right, rgb(17, 17, 89),rgb(0, 0, 32));
+    border-bottom: rgb(78, 215, 78) 4px solid;
 
     display: flex;
     justify-content: space-between;
@@ -39,8 +47,8 @@ header
 
 .navBarBtns li
 {
-    cursor: pointer;
     font-size: 1.25em;
+    color: white;
 }
 
 main
@@ -111,6 +119,27 @@ main
     font-family: "lato";
 }
 
+.heroSection button
+{
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 10px 20px;
+
+    background-color: rgb(78, 215, 78);
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-size: 1.25em;
+}
+
+.heroSection button:hover
+{
+    background-color: rgb(59, 163, 59);
+    color: white;
+}
+
 .infoSection
 {
     padding: 50px 20px;
@@ -141,7 +170,7 @@ footer
     padding: 0 20px;
 
     color: white;
-    background-color: navy;
+    background-color: rgb(13, 13, 65);
 
     display: flex;
     align-items: center;
