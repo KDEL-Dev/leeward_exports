@@ -318,6 +318,32 @@ footer
    }
 
 /* -------------
+    SERVICES
+   ------------- */
+
+   #serviceCont
+   {
+        margin: 10px 30px;
+
+   }
+
+   #serviceList
+   {
+        max-width: 600px;
+        flex: 1;
+
+        border: dotted 2px black;
+        padding: 30px;
+
+
+   }
+
+   #serviceList li
+   {
+        list-style: inside;
+   }
+
+/* -------------
     CONTACT PAGE
    ------------- */
 
