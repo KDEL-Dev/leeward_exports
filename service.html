@@ -14,44 +14,74 @@
         <nav>
             <ul class="navBarBtns">
                 <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="service.html">Service & Shipping</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="mainFlex">
         <section id="serviceCont">
             <div>
-                <h1>Services we provide</h1>
-            </div>
-            <div>
-                <h2>Our Services</h2>
-                <ul id="serviceList">
-                    <li>Consolidated cargo shipments of small and large packages</li>
-                    <li>Full container services</li>
-                    <li>20ft and 40ft container shipping available</li>
-                    <li>Vehicle Shipping</li>
-                    <li>Cargo pickup across Ontario</li>
-                    <li>Professional packaging, crating, and cargo wrapping services</li>
-                    <li>Receive and ship our customers online purchases</li>
-                    <li>Product sourcing</li>
-                    <li>Insurance coverage available upon request</li>
-                    <li>Returning national services</li>
-                    <li>Export Bill of lading provision</li>
-                    <li>Documentation and export assistance available</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Countries we services</h2>
                 <div>
-                    <ul>
-                        <li>Anguilla</li>
-                        <li>Antigua</li>
-                        <li>Monteserrat</li>
-                        <li>St.Kitts</li>
-                        <li>Nevis</li>
+                    <h1>Services we provide</h1>
+                </div>
+                <div id="ourServiceCard">
+                    <h2>Our Services</h2>
+                    <ul id="serviceList">
+                        <li>Consolidated cargo shipments of small and large packages</li>
+                        <li>Full container services</li>
+                        <li>20ft and 40ft container shipping available</li>
+                        <li>Vehicle Shipping</li>
+                        <li>Cargo pickup across Ontario</li>
+                        <li>Professional packaging, crating, and cargo wrapping services</li>
+                        <li>Receive and ship our customers online purchases</li>
+                        <li>Product sourcing</li>
+                        <li>Insurance coverage available upon request</li>
+                        <li>Returning national services</li>
+                        <li>Export Bill of lading provision</li>
+                        <li>Documentation and export assistance available</li>
                     </ul>
+                    
+                    <div id="serviceCountries">
+                        <h2>Countries we services</h2>
+                        <ul>
+                            <li><img src="img/flags/Flag_of_Anguilla.svg.png" alt="">Anguilla</li>
+                            <li><img src="img/flags/Flag_of_Antigua_and_Barbuda.svg.png" alt="">Antigua</li>
+                            <li><img src="img/flags/Flag_of_Montserrat.svg.png" alt="">Monteserrat</li>
+                            <li><img src="img/flags/Flag_of_Saint_Kitts_and_Nevis.svg.png" alt="">St.Kitts & Nevis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="serviceImg">
+                <!-- <img src="img/pexels-kelly-6595774.jpg" alt="">
+                <img src="img/pexels-matt-richmond-314917881-13600203.jpg" alt=""> -->
+            </div>
+        </section>
+        <section id="shippingCont">
+            <div>
+                <h2 id="shippingHeader">Shipping</h2>
+            </div>
+            <div class="shippingCard">
+                <div>
+                    <h2>Shipping Quotes</h2>
+                    <ul>
+                        <li><img src="img/icons/icons8-length-50.png" alt="">Length</li>
+                        <li><img src="img/icons/icons8-width-50.png" alt="">Width</li>
+                        <li><img src="img/icons/icons8-height-50.png" alt="">Height</li>
+                        <li><img src="img/icons/icons8-weight-50.png" alt="">Weight (recommended to add)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Shipping schedule</h2>
+                    <div id="shippingCardTextArea">
+                        <p>Please contact us directly for current shipping schedule</p>
+                    </div>
+                    <div id="shippingCardBtn">
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,18 +90,16 @@
         <div>
             <p>&copy Leeward Exports Inc</p>
         </div>
-        <div>
-            <ul class="footerNav">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <p>Email:</p>
-            <p>Phone:</p>
+        <div class="footerContact">
+            <div class="footerEmailDiv">
+                <img src="img/icons/icons8-email-white-50.png" alt="">
+                <p>Email: leewardexports@gmail.com</p>
+            </div>
+            <div class="footerPhoneDiv">
+                <img src="img/icons/icons8-phone-white-50.png" alt="">
+                <p>Phone: 647-389-1687</p>
+            </div>
+            
         </div>
     </footer>
 </body>

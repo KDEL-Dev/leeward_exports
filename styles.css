@@ -9,6 +9,15 @@
     font-family: "lato";
 }
 
+:root
+{
+    --main-color: rgb(45, 80, 130);
+    --secondary-color: rgb(57, 158, 91);
+    --secondary-color-highlight: rgb(26, 131, 64);
+    --info-bg-color: rgb(141, 157, 189);
+    --nav-dark-gradient-color: rgb(7, 7, 54)
+}
+
 a, a:visited, a:hover, a:active
 {
     text-decoration: none;
@@ -37,9 +46,9 @@ header
 
     color: white;
     /* background-image: linear-gradient(to right, rgb(44, 60, 131),rgb(7, 7, 54)); */
-    background-image: linear-gradient(to right, rgb(45, 80, 130),rgb(7, 7, 54));
+    background-image: linear-gradient(to right, var(--main-color),rgb(7, 7, 54));
 
-    border-bottom: rgb(78, 215, 78) 4px solid;
+    border-bottom: var(--secondary-color) 4px solid;
 
     display: flex;
     justify-content: space-between;
@@ -157,24 +166,25 @@ main
     font-family: "lato";
 }
 
-.heroSection button
+#heroBtn
 {
-    margin-top: 30px;
-    margin-left: 5px;
+    margin-top: 20px;
     padding: 10px 20px;
 
-    background-color: rgb(78, 215, 78);
+    background-color: var(--secondary-color);
     color: white;
     border: white 2px solid;
-    /* border-radius: 20px; */
+    border-radius: 10px;
     cursor: pointer;
 
     font-size: 1.25em;
+
+    display: inline-block;
 }
 
-.heroSection button:hover
+#heroBtn:hover
 {
-    background-color: rgb(59, 163, 59);
+    background-color: var(--secondary-color-highlight);
     color: white;
 }
 
@@ -334,14 +344,16 @@ main
     margin-top: 30px;
 
     border: 2px solid white;
+    border-radius: 10px;
     font-size: 1rem;
-    background-color: rgb(78, 215, 78) ;
+    color: white;
+    background-color: var(--secondary-color) ;
     cursor: pointer;
 }
 
 #homeContactText button:hover
 {
-    background-color: rgb(198, 255, 198);
+    background-color: var(--secondary-color-highlight);
 }
 
 
@@ -351,7 +363,8 @@ footer
     padding: 0 20px;
 
     color: white;
-    background-color: rgb(13, 13, 65);
+    /* background-color: var(--main-color); */
+    background-image: linear-gradient(to right, var(--main-color), var(--nav-dark-gradient-color));
 
     display: flex;
     align-items: center;
@@ -368,6 +381,40 @@ footer
 
     display: flex;
 
+}
+
+.footerContact
+{
+    display: flex;
+    align-items: center;
+}
+
+.footerEmailDiv
+{
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footerPhoneDiv
+{
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footerEmailDiv img
+{
+    margin-right: 10px;
+    width: 30px;
+}
+
+.footerPhoneDiv img
+{
+    margin-right: 10px;
+    width: 30px;
 }
 
 /* -------------
@@ -423,26 +470,86 @@ footer
     SERVICES
    ------------- */
 
+   #mainFlex
+   {
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+   }
+
    #serviceCont
    {
         margin: 10px 30px;
 
+        display: flex;
+        /* justify-content: center; */
+   }
+
+   #ourServiceCard
+   {
+        padding: 30px;
+        margin: 20px 0;
+
+        width: 100%;
+        max-width: 850px;
+        box-sizing: border-box;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+
+        /* background-color: var(--info-bg-color); */
+        background-image: linear-gradient(var(--info-bg-color),rgb(88, 92, 114));
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+
+   }
+
+   #ourServiceCard h2
+   {
+        text-align: center;
    }
 
    #serviceList
    {
         max-width: 600px;
+        padding: 30px;
         flex: 1;
 
-        border: dotted 2px black;
-        padding: 30px;
-
-
+        border: double 4px rgb(255, 255, 255);
+        border-radius: 20px;
+        
    }
+   
 
    #serviceList li
    {
+        margin: 10px 0;
+
         list-style: inside;
+        font-size: 1.25rem;
+   }
+
+   #serviceCountries ul 
+   {    
+        display: flex;
+        justify-content: space-evenly;
+   }
+
+   #serviceCountries li
+   {
+        margin: 10px;
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   #serviceCountries li img
+   {
+        height: 40px;
+        width: 80px;
+        margin-bottom: 10px;
    }
 
 /*  -------------
@@ -456,48 +563,51 @@ footer
 
     #shippingFlex
     {
-        width: 90%;
 
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #shippingHeader
+    {
+        margin: 0;
     }
 
     .shippingCard
     {
-        margin: 20px;
-        max-width: 450px;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        margin: 20px 0;
 
+        /* background-color: rgb(129, 185, 143); */
+        background-image: linear-gradient(rgb(129,185,143), rgb(59, 80, 59));
         border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.45);
-
+        color: white;
+        box-sizing: border-box;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .shippingCard h2
     {
-        margin: 0;
-        padding: 20px 0;
-
-        font-size: 1.5rem;
-        background-color: rgb(56, 56, 228);
         text-align: center;
     }
 
     .shippingCard ul
     {
-        padding: 0 50px 10px;
+        padding: 20px;
+
+        list-style: inside;
+        border: double white 4px;
+        border-radius: 10px;
     }
 
     .shippingCard li
     {
-        margin: 20px 0;
-
-        list-style: none;
-        font-size: 1.5rem;
-        font-weight: 300;
+        font-size: 1.25rem;
 
         display: flex;
         align-items: center;
@@ -505,7 +615,7 @@ footer
 
     .shippingCard li img
     {
-        padding-right: 30px;
+        margin-right: 20px;
     }
 
     #shippingCardTextArea
@@ -515,7 +625,8 @@ footer
 
     .shippingCard p
     {
-        padding: 0 20px;
+        margin: 10px 0 40px;
+
         height: 100%;
 
         text-align: center;
@@ -538,10 +649,15 @@ footer
     {
         padding: 20px;
 
-        background-color: blue;
+        background-color: var(--secondary-color);
+        border: 1px solid white;
         color: white;
         border-radius: 10px;
-        border: none;
+    }
+
+    #shippingCardBtn a:hover
+    {
+        background-color: var(--secondary-color-highlight);
     }
 /* -------------
     CONTACT PAGE
