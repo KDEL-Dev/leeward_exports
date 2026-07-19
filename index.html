@@ -10,12 +10,16 @@
 </head>
 <body>
     <header>
-        <a href="/"><div>LEEWARD EXPORT</div></a>
+        <a href="/">
+            <p>LEEWARD</p>
+            <p>EXPORTS</p>
+        </a>
         <nav>
             <ul class="navBarBtns">
-                <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Service & Shipping</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#aboutSect">About</a></li>
+                <li><a href="#serviceSect">Service</a></li>
+                <li><a href="#shippingSect">Shipping</a></li>
+                <li><a href="#homeContactSect">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,44 +33,111 @@
                     <a href="contact.html" id="heroBtn">Contact Us</a>
                 </div>
             </section>
-            <section class="infoSection">
+            <section class="infoSection" id="homeMsg">
                 <h2>Welcome to Leeward Exports</h2>
                 <p>We provide reliable cargo shipping and freight forwarding services from Canada to the Leeward Islands for over 25 years.</p>
             </section>
+        </section>
+        <section id="aboutSect">
+            <div class="infoSection" id="aboutAndVision">
+                    <div>
+                        <h2>About Us</h2>
+                        <p>
+                        At Leeward Exports Inc., we specialize in the shipments of personal, household, and commercial goods from Canada to the Leeward Islands. Built on 
+                        reliability, trust, and customer satisfaction, we provide dependable ocean cargo shipping with clear schedules and estimated arrival dates.
+                        Previously operated under Total Sales Inc., our company has evolved to better reflect the islands we proudly serve and the communities we support.
+                        With over 25 years of experience, we continue to be a trusted cargo shipper and exporter committed to professional service and customer care.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Vision</h2>
+                        <p>
+                            To provide the most reliable ocean cargo shipping and export services to the Leeward Islands. To build trusted relationships with our clients that 
+                            demonstrate our appreciation of their business. To work with a local broker at each shipping port to ensure our customers have a wholesome and efficient shipping experience. 
+                        </p>
+                    </div>
+                </div>
         </section>
         <section class="infoSection" id="islandsWeServeBg">
             <img src="img/thomas-vimare-IZ01rjX0XQA-unsplash.jpg" id="islandsWeServeBgImg" alt="image of the ocean">
             
             <div id="islandCont">
                 <h2>Islands We Service</h2>
-                <div class="islandCard">
-                    <img src="img/flags/Flag_of_Anguilla.svg.png" alt="">
-                    <p>Anguilla</p>
-                </div>
-                <div class="islandCard">
-                    <img src="img/flags/Flag_of_Antigua_and_Barbuda.svg.png" alt="">
-                    <p>Antigua</p>
-                </div>
-                <div class="islandCard">
-                    <img src="img/flags/Flag_of_Montserrat.svg.png" alt="">
-                    <p>Monteserrat</p>
-                </div>
-                <div class="islandCard">
-                    <img src="img/flags/Flag_of_Saint_Kitts_and_Nevis.svg.png" alt="flag of St.Kitts and Nevis">
-                    <p>St.Kitts & Nevis</p>
+                <div id="islandRow">
+                    <div class="islandCard">
+                        <img src="img/flags/Flag_of_Anguilla.svg.png" alt="">
+                        <p>Anguilla</p>
+                    </div>
+                    <div class="islandCard">
+                        <img src="img/flags/Flag_of_Antigua_and_Barbuda.svg.png" alt="">
+                        <p>Antigua</p>
+                    </div>
+                    <div class="islandCard">
+                        <img src="img/flags/Flag_of_Montserrat.svg.png" alt="">
+                        <p>Monteserrat</p>
+                    </div>
+                    <div class="islandCard">
+                        <img src="img/flags/Flag_of_Saint_Kitts_and_Nevis.svg.png" alt="flag of St.Kitts and Nevis">
+                        <p>St.Kitts & Nevis</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="infoSection">
-            <h2>Shipping</h2>
-            <p>Add info here</p>
+        <section class="infoSection" id="serviceSect">
+            <h2>Our Services</h2>
+            <div>
+                <!-- NEW PLAN; PLACE EVERYTHING ON ONE PAGE -->
+                <div id="homeServiceInfo">
+                    <h3>Here are some of the services we provide:</h3>
+                    <ul>
+                        <li>Consolidated cargo shipments of small and large packages</li>
+                        <li>Full container services</li>
+                        <li>20ft and 40ft container shipping available.</li>
+                        <li>Vehicle Shipping</li>
+                        <li>Cargo pickup across Ontario</li>
+                        <li>Professional packaging, crating, and cargo wrapping services</li>
+                        <li>Receive and ship our customers online purchases</li>
+                        <li>Product sourcing</li>
+                        <li>Insurance coverage available upon request</li>
+                        <li>Returning national services</li>
+                        <li>Export Bill of lading provision</li>
+                        <li>Documentation and export assistance available</li>
+                    </ul>
+                    <p>To read more about shipping information:</p>
+                    <button><a href="service.html">Click Here</a></button>
+                </div>
+                <!-- <img src="img/dendoktoor-container-ship-6631117.jpg" alt=""> -->
+            </div>
+        </section>
+        <section id="shippingSect">
+            <div class="infoSection" id="homeShipping">
+                <h2>Shipping Information</h2>
+                <div id="homeShippingInfo">
+                    <p>To receive an accurate shipping quote, please provide the following package information.</p>
+                    <ul>
+                        <li><img src="img/icons/icons8-length-50.png" alt="">Length</li>
+                        <li><img src="img/icons/icons8-width-50.png" alt="">Width</li>
+                        <li><img src="img/icons/icons8-height-50.png" alt="">Height</li>
+                        <li><img src="img/icons/icons8-weight-50.png" alt="">Weight (recommended to add)</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="infoSection" id="homeContactSect">
             <img src="img/adriana-macias-xmzNjGBRF04-unsplash.jpg" alt="City of Toronto from the Water">
             <div id="homeContactText">
                 <h2>Need shipping information?</h2>
                 <p>Have questions about shipping, schedules, or preparing your cargo? Our team is ready to help.</p>
-                <a href="contact.html"><button>Contact Us</button></a>
+                <div id="contactInfo">
+                    <div>
+                        <h3>Email:</h3>
+                        <a href="mailto:leewardexports@gmail.com">leewardexports@gmail.com</a>
+                    </div>
+                    <div>
+                        <h3>Phone:</h3>
+                        <a href="tel:+6473891687">647-389-1687</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

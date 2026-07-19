@@ -34,6 +34,8 @@ body
 {
     min-height: 100vh;
 
+    background-color: rgb(233, 239, 241);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,6 +55,12 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header p
+{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navBarBtns
@@ -75,7 +83,7 @@ header
 
 .navBarBtns li:hover
 {
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 
@@ -113,7 +121,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .heroSection img
@@ -150,7 +158,7 @@ main
     z-index: 3;
 
     color: white;
-    max-width: 600px; /* Keep your slogan from strectching too wide */
+    text-align: center;
 }
 
 .heroSection h1
@@ -164,6 +172,8 @@ main
 
     font-size: 2em;
     font-family: "lato";
+    font-weight: 400;
+    font-style: italic;
 }
 
 #heroBtn
@@ -196,7 +206,7 @@ main
     border-bottom: 1px solid grey;
 }
 
-.infoSection:nth-last-child
+.infoSection:last-child
 {
     border-bottom: none;
 }
@@ -204,6 +214,73 @@ main
 .infoSection h2
 {
     margin-bottom: 20px;
+}
+
+#homeMsg
+{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+}
+
+#homeMsg h2
+{
+    display: inline-block;
+    position: relative;
+}
+
+#homeMsg h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 5px; /* Thickness */
+    background-color: var(--secondary-color);
+}
+
+#homeMsg p
+{
+    margin: 20px;
+}
+
+#aboutAndVision
+{
+    margin: 20px 0;
+
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    display: flex;
+}
+
+#aboutAndVision div
+{
+    width: 50%;
+    padding: 0 40px;
+
+    text-align: center;
+}
+
+#aboutAndVision h2
+{
+    position: relative;
+    margin: 30px 0 20px;
+
+
+    display: inline-block;
+}
+
+#aboutAndVision h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 5px; /* Thickness */
+    background-color: var(--secondary-color);
 }
 
 #islandsWeServeBg
@@ -246,6 +323,7 @@ main
 
 #islandsWeServeBg h2
 {
+    margin: 0;
     color: white;
 }
 
@@ -257,19 +335,40 @@ main
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 20px;
-    gap: 20px;
     z-index: 3;
+    text-align: center;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 
+#islandCont h2
+{
+    position: relative;
+    display: inline-block;
+}
+
+#islandCont h2::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 5px; /* Thickness */
+    background-color: var(--secondary-color);
+}
+
+#islandRow
+{
+    display: flex;
+}
 .islandCard
 {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 
     display: flex;
     flex-direction: column;
@@ -279,8 +378,8 @@ main
 
 .islandCard img
 {
-    height: 150px;
-    width: 250px;
+    height: 100px;
+    width: 175px;
     object-fit: fill;
 }
 
@@ -298,6 +397,193 @@ main
     position: relative;
 
     box-sizing: border-box;
+}
+
+#serviceSect
+{
+    height: 100%;
+    margin: 20px 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    background-color: white;
+    text-align: center;
+}
+
+#serviceSect h2,h3
+{
+    text-align: center;
+}
+
+#serviceSect h2
+{
+    margin: 40px;
+    position: relative;
+    display: inline-block;
+
+}
+
+#serviceSect h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+
+#serviceSect>div
+{
+    margin: 0 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#homeServiceInfo
+{   
+    max-width: 800px;
+
+    margin-right: 20px;
+    padding: 20px;
+
+    list-style-position: inside;
+    border: rgba(0, 0, 0, 0.25) solid 1px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+#homeServiceInfo ul
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#homeServiceInfo li
+{
+    margin: 10px 0;
+    padding: 10px;
+
+    text-align: left;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+#homeServiceInfo li::before {
+    content: "■";
+    color: var(--secondary-color); /* Change bullet color */
+    flex-shrink: 0;
+}
+
+#homeServiceInfo p
+{
+    margin: 20px;
+
+    font-weight: 700;
+    text-align: center;
+}
+
+#homeServiceInfo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homeServiceInfo button
+{
+    padding: 10px;
+    
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.1rem;
+}
+
+#homeServiceInfo button:hover
+{
+    cursor: pointer;
+    background-color: var(--secondary-color-highlight);
+}
+
+#serviceSect img
+{
+    max-width: 550px;
+    height: auto;
+}
+
+#homeShipping
+{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    background-color: white;
+    text-align: center;
+
+}
+
+#homeShipping h2
+{
+    position: relative;
+    display: inline-block;
+}
+
+#homeShipping h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+
+    background-color: var(--secondary-color);
+}
+
+#homeShippingInfo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#homeShippingInfo p
+{
+    margin: 20px 0 40px;
+    text-align: center;
+}
+
+#homeShippingInfo ul
+{
+    width: 100%;
+    max-width: 1294px;
+    padding: 20px;
+    /* padding: 20px 150px; */
+
+    border: dashed 2px rgba(0, 0, 0, .25);
+    background-color: #f5f5f5;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#homeShippingInfo li
+{
+    gap: 20px;
+    list-style-type: none;
+    font-size: 1.25rem;
+
+    display: flex;
+    align-items: center;
 }
 
 #homeContactSect::after
@@ -338,6 +624,24 @@ main
     align-items: center;
 }
 
+#homeContactText h2
+{
+    display: inline-block;
+    position: relative;
+}
+
+#homeContactText h2::after
+{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+
+    background-color: var(--secondary-color);
+}
+
 #homeContactText button
 {
     padding: 10px 20px;
@@ -354,6 +658,34 @@ main
 #homeContactText button:hover
 {
     background-color: var(--secondary-color-highlight);
+}
+
+#contactInfo
+{
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contactInfo div
+{
+    width: 50%;
+    margin: 40px;
+}
+
+#contactInfo h3
+{
+    margin: 20px;
+    font-size: 2rem;
+}
+
+#contactInfo a
+{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 
@@ -424,7 +756,6 @@ footer
    #aboutUsCont
    {
         display: flex;
-        justify-content: space-between;
    }
 
    #aboutUsInfo
@@ -451,7 +782,7 @@ footer
    #aboutUsImg img
    {
         margin: 20px;
-        width: 400px;
+        width: 300px;
    }
 
    #ctaDiv p
