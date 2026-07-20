@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles.css">
+    
 
     <title>Leeward Island Export</title>
 </head>
 <body>
     <header>
-        <a href="/">
+        <a href="/" class="logo">
             <p>LEEWARD</p>
             <p>EXPORTS</p>
         </a>
-        <nav>
+
+        <button id="menuBtn">☰</button>
+
+        <nav id="mobileNav">
             <ul class="navBarBtns">
-                <li><a href="#aboutSect">About</a></li>
+                <li><a href="#aboutSect">About Us</a></li>
                 <li><a href="#serviceSect">Service</a></li>
                 <li><a href="#shippingSect">Shipping</a></li>
                 <li><a href="#homeContactSect">Contact</a></li>
@@ -30,7 +34,7 @@
                 <div id="heroSectionText">
                     <h1>Leeward Island Export</h1>
                     <h2>Service you can trust</h2>
-                    <a href="contact.html" id="heroBtn">Contact Us</a>
+                    <a href="#homeContactSect" id="heroBtn">Contact Us</a>
                 </div>
             </section>
             <section class="infoSection" id="homeMsg">
@@ -103,8 +107,8 @@
                         <li>Export Bill of lading provision</li>
                         <li>Documentation and export assistance available</li>
                     </ul>
-                    <p>To read more about shipping information:</p>
-                    <button><a href="service.html">Click Here</a></button>
+                    <p>If you'd like to get into contact with us:</p>
+                    <a href="#homeContactSect"><button>Click Here</button></a>
                 </div>
                 <!-- <img src="img/dendoktoor-container-ship-6631117.jpg" alt=""> -->
             </div>
@@ -130,12 +134,12 @@
                 <p>Have questions about shipping, schedules, or preparing your cargo? Our team is ready to help.</p>
                 <div id="contactInfo">
                     <div>
-                        <h3>Email:</h3>
-                        <a href="mailto:leewardexports@gmail.com">leewardexports@gmail.com</a>
-                    </div>
-                    <div>
                         <h3>Phone:</h3>
                         <a href="tel:+6473891687">647-389-1687</a>
+                    </div>
+                    <div>
+                        <h3>Email:</h3>
+                        <a href="mailto:leewardexports@gmail.com">leewardexports@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -157,5 +161,8 @@
             
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>

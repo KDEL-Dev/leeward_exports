@@ -63,6 +63,11 @@ header p
     font-weight: bold;
 }
 
+#menuBtn 
+{
+    display: none;
+}
+
 .navBarBtns
 {
     gap: 30px;
@@ -163,22 +168,23 @@ main
 
 .heroSection h1
 {
+    margin: 20px 0 10px;
     font-size: 5em;
 }
 
 .heroSection h2
 {
-    margin: 0;
+    margin: 10px;
 
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "lato";
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
 }
 
 #heroBtn
 {
-    margin-top: 20px;
+    margin: 20px;
     padding: 10px 20px;
 
     background-color: var(--secondary-color);
@@ -309,7 +315,7 @@ main
     height: 100%;
 
     /* background-color: rgba(41, 70, 106, 0.6); */
-    background-color: rgba(77, 122, 173, 0.6);
+    background-color: rgba(77, 122, 173, 0.3);
 
 }
 
@@ -380,7 +386,9 @@ main
 {
     height: 100px;
     width: 175px;
+
     object-fit: fill;
+    box-shadow: 0px 5px 7px rgba(1, 1, 1, .25);
 }
 
 .islandCard p
@@ -499,6 +507,7 @@ main
 
 #homeServiceInfo button
 {
+    width: 100%;
     padding: 10px;
     
     border-radius: 20px;
@@ -642,6 +651,11 @@ main
     background-color: var(--secondary-color);
 }
 
+#homeContactText p
+{
+    margin: 20px 0;
+}
+
 #homeContactText button
 {
     padding: 10px 20px;
@@ -671,19 +685,19 @@ main
 #contactInfo div
 {
     width: 50%;
-    margin: 40px;
+    margin: 0 40px;
 }
 
 #contactInfo h3
 {
-    margin: 20px;
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 
 #contactInfo a
 {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.33);
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -749,362 +763,362 @@ footer
     width: 30px;
 }
 
-/* -------------
-    ABOUT US PAGE
-   ------------- */
+/* =======================================
+   TABLETS (1024px and below)
+======================================= */
 
-   #aboutUsCont
-   {
-        display: flex;
-   }
+@media (max-width:1024px){
 
-   #aboutUsInfo
-   {
-        /* margin: 20px 0; */
-        padding: 0 10px;
-   }
-
-   #aboutUsInfo h1,h2
-   {
-
-        margin: 30px;
-        font-size: 2em;
-   }
-
-   #aboutUsInfo p
-   {
-        margin: 30px;
-
-        font-size: 1.1em;
-        font-weight: 300;
-   }
-
-   #aboutUsImg img
-   {
-        margin: 20px;
-        width: 300px;
-   }
-
-   #ctaDiv p
-   {
-        margin: 0 30px;
-   }
-
-   #ctaLink
-   {
-        margin: 20px 30px;
-
-        display: inline-block;
-   }
-
-/* -------------
-    SERVICES
-   ------------- */
-
-   #mainFlex
-   {
-        padding: 20px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-   }
-
-   #serviceCont
-   {
-        margin: 10px 30px;
-
-        display: flex;
-        /* justify-content: center; */
-   }
-
-   #ourServiceCard
-   {
-        padding: 30px;
-        margin: 20px 0;
-
-        width: 100%;
-        max-width: 850px;
-        box-sizing: border-box;
-        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-
-        /* background-color: var(--info-bg-color); */
-        background-image: linear-gradient(var(--info-bg-color),rgb(88, 92, 114));
-        color: rgb(255, 255, 255);
-        border-radius: 10px;
-
-   }
-
-   #ourServiceCard h2
-   {
-        text-align: center;
-   }
-
-   #serviceList
-   {
-        max-width: 600px;
-        padding: 30px;
-        flex: 1;
-
-        border: double 4px rgb(255, 255, 255);
-        border-radius: 20px;
-        
-   }
-   
-
-   #serviceList li
-   {
-        margin: 10px 0;
-
-        list-style: inside;
-        font-size: 1.25rem;
-   }
-
-   #serviceCountries ul 
-   {    
-        display: flex;
-        justify-content: space-evenly;
-   }
-
-   #serviceCountries li
-   {
-        margin: 10px;
-        list-style: none;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-   }
-
-   #serviceCountries li img
-   {
-        height: 40px;
-        width: 80px;
-        margin-bottom: 10px;
-   }
-
-/*  -------------
-    SHIPPING PAGE
-    ------------- */
-
-    #shippingPage
-    {
-        padding: 20px;
+    .heroSection{
+        padding:40px;
     }
 
-    #shippingFlex
-    {
-
-        display: flex;
-        flex-direction: column;
+    .heroSection h1{
+        font-size:3.5rem;
     }
 
-    #shippingHeader
-    {
-        margin: 0;
+    #islandRow{
+        /* flex-wrap:wrap; */
+        justify-content:center;
     }
 
-    .shippingCard
+    .islandCard 
     {
-        width: 100%;
-        max-width: 600px;
-        padding: 20px;
-        margin: 20px 0;
-
-        /* background-color: rgb(129, 185, 143); */
-        background-image: linear-gradient(rgb(129,185,143), rgb(59, 80, 59));
-        border-radius: 10px;
-        color: white;
-        box-sizing: border-box;
-        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 180px;
+        height: 180px;
     }
 
-    .shippingCard h2
+    .islandCard img 
     {
-        text-align: center;
+        width: 175px;
+        height: 100px;
     }
 
-    .shippingCard ul
-    {
-        padding: 20px;
-
-        list-style: inside;
-        border: double white 4px;
-        border-radius: 10px;
+    .islandCard p{
+        font-size:1.4rem;
     }
 
-    .shippingCard li
-    {
-        font-size: 1.25rem;
-
-        display: flex;
-        align-items: center;
+    #homeShippingInfo ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
     }
 
-    .shippingCard li img
-    {
-        margin-right: 20px;
+    #homeShippingInfo li{
+        width:45%;
     }
 
-    #shippingCardTextArea
-    {
-        flex: 1;
+    #contactInfo a{
+        font-size:1.2rem;
     }
+}
 
-    .shippingCard p
-    {
-        margin: 10px 0 40px;
+/* =======================================
+   PHONES & SMALL TABLETS (768px and below)
+======================================= */
 
-        height: 100%;
+@media (max-width:768px)
+{
 
-        text-align: center;
-        font-size: 1.25rem;
+    /* ---------- Header ---------- */
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #shippingCardBtn
-    {
-        padding: 0 20px 20px;
-
-        display: flex;
-        justify-content: center;
-    }
-
-    #shippingCardBtn a
-    {
-        padding: 20px;
-
-        background-color: var(--secondary-color);
-        border: 1px solid white;
-        color: white;
-        border-radius: 10px;
-    }
-
-    #shippingCardBtn a:hover
-    {
-        background-color: var(--secondary-color-highlight);
-    }
-/* -------------
-    CONTACT PAGE
-   ------------- */
-
-   #contactSection
-   {
-        min-height: calc(100vh - 70px - 50px);
-
-        display: flex;
-        justify-content: space-between;
-
-   }
-
-
-   #contact-info,
-   #contact-img 
-   {
-        width: 50%;
-   }
-
-   #contact-info
-   {
-        flex: 1;
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-   }
-
-   #contact-info p
-   {
-        font-size: 1.5em; 
-
-   }
-
-   #contactTitleDiv
-   {
-        margin: 50px 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-   }
-
-   #contactTitleDiv p
-   {
-        margin: 0;
-        color: gray;
-
-        font-size: 1.25em;
-        font-weight: 300;
-   }
-
-   #contact-info h2
-   {
-        margin-bottom: 0;
-        font-size: 3em;
-        
-   }
-
-   
-
-   .contactIconBg
-   {
-        margin: 20px 10px;
-        /* width: 45px;
-        height: 45px;
-        
-
-        background-image: linear-gradient(rgb(78, 215, 78), rgb(41, 172, 41));
-        border-radius: 100px;
-        box-shadow: 2px 2px 10px rgba(1, 1, 1, .20); */
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-   }
-
-   #contact-info img
-   {
-        width: 30px;
-   }
-
-   #contactInfoFlex
-   {
-        width: 100%;;
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-   }
-
-   .contactEmailPhoneDiv
-   {
-        width: 500px;
-
-
-        display: flex;
-        align-items: center;
-        /* justify-content: center; */
-   }
-
-   #contact-img 
-   {
-        overflow: hidden;
-   }
-
-   #contact-img img
-   {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: right center;
-        
+    #menuBtn {
         display: block;
-   }
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+        header {
+        height:70px;
+        padding:0 15px;
+        position:relative;
+    }
+
+    #mobileNav {
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background-image:linear-gradient(
+            to right,
+            var(--main-color),
+            var(--nav-dark-gradient-color)
+        );
+        z-index:100;
+    }
+
+    #mobileNav.open {
+        display:block;
+    }
+
+    .navBarBtns {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navBarBtns li {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid rgba(255,255,255,.2);
+    }
+
+    .navBarBtns li:hover {
+        background: rgba(255,255,255,.08);
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .viewHeight{
+        min-height: auto;
+    }
+    
+    .heroSection{
+
+        min-height: 450px;
+        padding: 30px 20px;
+
+    }
+
+    .heroSection h1{
+        font-size:2.7rem;
+    }
+
+    .heroSection h2{
+        font-size:1.2rem;
+    }
+
+    /* ---------- About ---------- */
+
+    #aboutAndVision{
+        flex-direction:column;
+    }
+
+    #aboutAndVision div{
+        width:100%;
+        padding:20px;
+    }
+
+    /* ---------- Services ---------- */
+
+    #serviceSect>div{
+        margin:0;
+    }
+
+    #homeServiceInfo{
+        margin:0;
+        max-width:100%;
+    }
+
+    #homeServiceInfo ul{
+        grid-template-columns:1fr;
+    }
+
+    /* ---------- Islands ---------- */
+
+    #islandsWeServeBg{
+
+        height:auto;
+        min-height:600px;
+    }
+
+    #islandsWeServeBgImg{
+
+        position:absolute;
+        inset:0;
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+    }
+
+    #islandCont{
+
+        position:relative;
+
+        top:auto;
+        left:auto;
+        transform:none;
+
+        width:100%;
+        padding:50px 20px;
+
+        margin:auto;
+    }
+
+    
+
+    #islandRow 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .islandCard 
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    
+
+
+    /* ---------- Shipping ---------- */
+
+    #homeShippingInfo ul{
+
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #homeShippingInfo li{
+
+        width:100%;
+        justify-content:center;
+    }
+
+    /* ---------- Contact ---------- */
+
+    #homeContactSect{
+
+        min-height:550px;
+    }
+
+    #homeContactSect img{
+
+        position:absolute;
+        inset:0;
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+    }
+
+    #homeContactText{
+
+        width:90%;
+    }
+
+    #contactInfo{
+
+        flex-direction:column;
+        gap:30px;
+
+    }
+
+    #contactInfo div{
+
+        width:100%;
+        margin:0;
+    }
+
+
+
+    /* ---------- Footer ---------- */
+
+    footer{
+
+        height:auto;
+        padding:20px;
+
+        flex-direction:column;
+        gap:20px;
+
+        text-align:center;
+    }
+
+    .footerContact{
+
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+/* =======================================
+   PHONES (480px and below)
+======================================= */
+
+@media (max-width:480px)
+{
+    header
+    {
+        min-height:70px;
+        height:auto;
+    }
+
+
+    header p{
+        font-size:1.2rem;
+    }
+
+    .navBarBtns{
+
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .heroSection h1{
+        font-size:2rem;
+    }
+
+    .heroSection h2{
+        font-size:1rem;
+    }
+
+    #heroBtn{
+        width:100%;
+        max-width:220px;
+    }
+
+    .infoSection{
+        padding:40px 15px;
+    }
+
+    .islandCard{
+
+        width:150px;
+        height:150px;
+    }
+
+    .islandCard img {
+        width: 150px;
+        height: 75px;
+        object-fit: fill;
+        box-shadow: 0px 5px 7px rgba(1, 1, 1, .25);
+    }
+
+
+    .islandCard p{
+
+        font-size:1rem;
+    }
+
+    #homeShippingInfo li{
+
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+
+    #contactInfo a{
+
+        font-size:1rem;
+        word-break:break-word;
+    }
+
+    .footerEmailDiv,
+    .footerPhoneDiv{
+
+        margin:0;
+        justify-content:center;
+    }
+}
